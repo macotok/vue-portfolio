@@ -7,8 +7,8 @@
 </template>
 
 <script>
-  export default {
-    title: 'Not Found',
-    description: '',
-  }
+export default {
+  title: 'Not Found',
+  description: '',
+};
 </script>

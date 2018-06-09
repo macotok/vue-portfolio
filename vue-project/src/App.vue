@@ -8,13 +8,14 @@
 </template>
 
 <script>
-  import HeaderNav from '@/components/parts/NavHeader';
-  export default {
-    name: 'App',
-    components: {
-      hnav: HeaderNav,
-    }
-  };
+import HeaderNav from '@/components/parts/NavHeader';
+
+export default {
+  name: 'App',
+  components: {
+    hnav: HeaderNav,
+  },
+};
 </script>
 
 <style>

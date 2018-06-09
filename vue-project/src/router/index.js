@@ -3,7 +3,7 @@ import Router from 'vue-router';
 import Top from '@/components/Top';
 import LayoutWorks from '@/components/layouts/Works';
 import WorksTop from '@/components/WorksTop';
-import WorksDetail from '@/components/ProductDetail';
+import WorksDetail from '@/components/WorksDetail';
 import Contact from '@/components/Contact';
 import About from '@/components/About';
 import PageNotFound from '@/components/PageNotFound';

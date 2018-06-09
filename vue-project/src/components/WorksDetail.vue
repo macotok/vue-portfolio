@@ -5,4 +5,9 @@
 </template>
 
 <script>
+export default {
+  title: '',
+  description: '',
+  props: ['data'],
+};
 </script>
