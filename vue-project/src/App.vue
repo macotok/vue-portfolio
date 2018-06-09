@@ -1,14 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <header>
+      <h1 class="site-title"><router-link to="/">macotok portfolio</router-link></h1>
+    </header>
+    <hnav></hnav>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App',
-};
+  import HeaderNav from '@/components/parts/NavHeader';
+  export default {
+    name: 'App',
+    components: {
+      hnav: HeaderNav,
+    }
+  };
 </script>
 
 <style>
