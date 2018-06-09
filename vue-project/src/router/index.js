@@ -1,6 +1,12 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HelloWorld from '@/components/HelloWorld';
+import Top from '@/components/Top';
+import LayoutWorks from '@/components/layouts/Works';
+import WorksTop from '@/components/WorksTop';
+import WorksDetail from '@/components/ProductDetail';
+import Contact from '@/components/Contact';
+import About from '@/components/About';
+import PageNotFound from '@/components/PageNotFound';
 
 Vue.use(Router);
 
@@ -9,8 +15,40 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld,
+      name: 'Top',
+      component: Top,
+    },
+    {
+      path: '/works',
+      component: LayoutWorks,
+      children: [
+        {
+          path: '/',
+          name: 'WorksTop',
+          component: WorksTop,
+        },
+        {
+          path: ':slug',
+          name: 'WorksDetail',
+          component: WorksDetail,
+        },
+      ],
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: Contact,
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: About,
+    },
+    {
+      path: '*',
+      name: 'Not Found',
+      component: PageNotFound,
+      title: 'Not Found',
     },
   ],
 });
