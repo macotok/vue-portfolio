@@ -4,6 +4,7 @@
       <h1 class="site-title"><router-link to="/">macotok portfolio</router-link></h1>
     </header>
     <hnav></hnav>
+    <router-view></router-view>
   </div>
 </template>
 
