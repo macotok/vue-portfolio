@@ -33,5 +33,15 @@ export default {
       return matchData[0];
     },
   },
+  mounted() {
+    document.title = `${this.filterData.title} - macotok portfolio`;
+
+    const meta = document.getElementsByTagName('meta');
+    for (let i = 0; i < meta.length; i += 1) {
+      if (meta[i].name.toLowerCase() === 'description') {
+        meta[i].content = `${this.filterData.title}について`;
+      }
+    }
+  },
 };
 </script>

@@ -3,7 +3,11 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
+import titleMixin from './util/title';
+import descriptionMixin from './util/description';
 
+Vue.mixin(titleMixin);
+Vue.mixin(descriptionMixin);
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
