@@ -1,0 +1,17 @@
+@charset 'utf-8';
+@import '_reset.scss';
+
+/** v-cloak */
+[v-cloak] {
+  display: none;
+}
+/** Transition */
+.fade-enter-active {
+  transition: opacity 1s ease-in
+}
+.fade-leave-active {
+  transition: opacity .1s ease-out
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}

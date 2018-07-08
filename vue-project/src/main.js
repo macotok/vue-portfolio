@@ -5,6 +5,7 @@ import App from './App';
 import router from './router';
 import titleMixin from './util/title';
 import descriptionMixin from './util/description';
+import './assets/style/style.scss';
 
 Vue.mixin(titleMixin);
 Vue.mixin(descriptionMixin);
