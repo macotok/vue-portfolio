@@ -2,7 +2,7 @@
   <div>
     <h1>作品紹介</h1>
     <article v-for="(d, index) in data" :key='index'>
-      <div v-for="(p, index) in d.picture" :key='index' v-if="p.id === '1'">
+      <div v-for="(p, index) in d.picture" :key='index' v-if="p.id === 1">
         <router-link :to="'/works/' + d.slug"><img :src="p.path"></router-link>
       </div>
       <div>

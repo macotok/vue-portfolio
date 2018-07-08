@@ -1,6 +1,6 @@
 [
   {
-    "slug": "ページURL",
+    "slug": "1",
     "title": "作品のタイトル",
     "year": "制作年",
     "description": "作品の解説",
@@ -10,11 +10,11 @@
     "url": "//dam.becolomochi.com/gezicht",
     "picture": [
       {
-        "id": "1",
+        "id": 1,
         "path": "http://drive.google.com/uc?export=view&id=0BzPW0pNckTNURjFDdm5fM3FfNVk"
       },
       {
-        "id": "2",
+        "id": 2,
         "path": "http://drive.google.com/uc?export=view&id=0BzPW0pNckTNURjFDdm5fM3FfNVk"
       }
     ]
